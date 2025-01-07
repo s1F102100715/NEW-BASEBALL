@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>本塁打ランキング</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 20px; /* 表の間のスペース */
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #f4f4f4;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>セリーグ補正データサイト</h1>
+    <p>実際の本塁打数と補正本塁打数を比較します。</p>
+    
+    <h2>実際の本塁打数</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>順位</th>
+                <th>選手名</th>
+                <th>本塁打数</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>村上 宗隆</td><td>30</td></tr>
+            <tr><td>2</td><td>岡本 和真</td><td>23</td></tr>
+            <tr><td>3</td><td>牧 秀悟</td><td>22</td></tr>
+            <tr><td>4</td><td>細川 成也</td><td>22</td></tr>
+            <tr><td>5</td><td>オースティン</td><td>21</td></tr>
+            <tr><td>6</td><td>サンタナ</td><td>16</td></tr>
+            <tr><td>7</td><td>佐藤 輝明</td><td>15</td></tr>
+            <tr><td>8</td><td>森下 翔太</td><td>14</td></tr>
+            <tr><td>9</td><td>宮﨑 敏郎</td><td>14</td></tr>
+            <tr><td>10</td><td>オスナ</td><td>14</td></tr>
+            <tr><td>11</td><td>山田 哲人</td><td>13</td></tr>
+            <tr><td>12</td><td>丸 佳浩</td><td>12</td></tr>
+            <tr><td>13</td><td>坂倉 将吾</td><td>12</td></tr>
+            <tr><td>14</td><td>大山 悠輔</td><td>11</td></tr>
+            <tr><td>15</td><td>末包 昇大</td><td>9</td></tr>
+        </tbody>
+    </table>
+
+    <h2>補正本塁打数</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>順位</th>
+                <th>選手名</th>
+                <th>本塁打数</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>細川 成也</td><td>24</td></tr>
+            <tr><td>2</td><td>牧 秀悟</td><td>22</td></tr>
+            <tr><td>3</td><td>村上 宗隆</td><td>21</td></tr>
+            <tr><td>4</td><td>岡本 和真</td><td>18</td></tr>
+            <tr><td>5</td><td>オースティン</td><td>18</td></tr>
+            <tr><td>6</td><td>森下 翔太</td><td>17</td></tr>
+            <tr><td>7</td><td>佐藤 輝明</td><td>15</td></tr>
+            <tr><td>8</td><td>大山 悠輔</td><td>13</td></tr>
+            <tr><td>9</td><td>宮﨑 敏郎</td><td>12</td></tr>
+            <tr><td>10</td><td>坂倉 将吾</td><td>11</td></tr>
+            <tr><td>11</td><td>サンタナ</td><td>9</td></tr>
+            <tr><td>12</td><td>丸 佳浩</td><td>9</td></tr>
+            <tr><td>13</td><td>オスナ</td><td>9</td></tr>
+            <tr><td>14</td><td>末包 昇大</td><td>9</td></tr>
+            <tr><td>15</td><td>山田 哲人</td><td>8</td></tr>
+        </tbody>
+    </table>
+
+    <div class="info">
+        <p>
+            ・セリーグの6球場（東京ドーム、阪神甲子園球場、横浜スタジアム、MAZDA Zoom-Zoomスタジアム広島、明治神宮野球場、バンテリンドームナゴヤ）を対象とした。<br>
+            ・2024年シーズンの選手ごとの打数と本塁打数を球場ごとに集計し、本塁打率を算出。<br>
+            ・平均本塁打率に基づき補正値を計算し、球場影響を除外した補正後本塁打数を新たな指標として算出。
+        </p>
+    </div>
+    <h2>補正本塁打数の計算式</h2>
+    <p>
+        ・本塁打率=本塁打数/打数<br>
+        ・補正値=特定球場の本塁打率/リーグ全体の本塁打率<br>
+        ・補正後本塁打数=本塁打数×補正値
+    </p>
+    <form>
+        <h2>ご意見・フィードバック</h2>
+        <p>このサイトに関するご意見をお聞かせください。</p>
+        <a href="https://forms.gle/4FLxhhNnRmEKmBxK8" target="_blank" style="font-size: 16px; color: blue; text-decoration: underline;">ご意見フォームはこちら</a>
+    </form>
+</body>
+</html>
